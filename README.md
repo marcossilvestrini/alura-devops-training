@@ -1,21 +1,6 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -26,23 +11,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/marcossilvestrini/templates">
+  <a href="https://github.com/marcossilvestrini/alura-devops-training">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Templates</h3>
+<h3 align="center">alura-devops-training</h3>
 
   <p align="center">
-    Project for publish template for all tools and languages
+    Alura Devops Training
     <br />
-    <a href="https://github.com/marcossilvestrini/templates"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/marcossilvestrini/alura-devops-training"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/marcossilvestrini/templates">View Demo</a>
+    <a href="https://github.com/marcossilvestrini/alura-devops-training">View Demo</a>
     -
-    <a href="https://github.com/marcossilvestrini/templates/issues">Report Bug</a>
+    <a href="https://github.com/marcossilvestrini/alura-devops-training/issues">Report Bug</a>
     -
-    <a href="https://github.com/marcossilvestrini/templates/issues">Request Feature</a>
+    <a href="https://github.com/marcossilvestrini/alura-devops-training/issues">Request Feature</a>
   </p>
 </div>
 
@@ -75,58 +60,68 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `marcossilvestrini`, `templates`, `mrsilvestrini`, `marcossilvestrini`, `gmail`, `marcos.silvestrini`, `Templates`, `Project for publish template for all tools and languages`
+Project for share content about alura devops training
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Github][Github-badge]][Github-url]
+* [![GNULinux][GNULinux-badge]][GNULinux-url]
+* [![Windows][Windows-badge]][Windows-url]
+* [![Bash][Bash-badge]][Bash-url]
+* [![Powershell][Powershell-badge]][Powershell-url]
+* [![Vagrant][Vagrant-badge]][Vagrant-url]
+* [![AWS][AWS-badge]][AWS-url]
+* [![Terraform][Terraform-badge]][Terraform-url]
+* [![Ansible][Ansible-badge]][Ansible-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
-* npm
+***python3***
 
   ```sh
-  npm install npm@latest -g
+  #Debian\Ubuntu
+  apt-get install python3
+  apt install -y python3-pip
+
+  #Centos\RHEL
+  sudo dnf install python3
+  yum –y install python3-pip
+  ```
+
+***terraform***
+
+  ```sh
+  #Debian\Ubuntu
+  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+
+  #Centos\RHEL
+  sudo yum install -y yum-utils
+  sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+  sudo yum -y install terraform
+  ```
+
+***ansible***
+
+  ```sh
+  #Debian\Ubuntu\Centos\RHEL
+  python3 -m pip install --user ansible
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
 
    ```sh
-   git clone https://github.com/marcossilvestrini/templates.git
-   ```
-
-3. Install NPM packages
-
-   ```sh
-   npm install
-   ```
-
-4. Enter your API in `config.js`
-
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   git clone https://github.com/marcossilvestrini/alura-devops-training.git
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -134,30 +129,43 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Clone the repo
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```sh
+#HTTPS
+git clone https://github.com/marcossilvestrini/alura-devops-training.git
+
+#SSH
+git clone git@github.com:marcossilvestrini/alura-devops-training.git
+```
+
+_For more examples, please refer to the [Documentation](https://github.com/marcossilvestrini/alura-devops-training)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
 
-* [ ] Feature 1
-* [ ] Feature 2
-* [ ] Feature 3
-  * [ ] Nested Feature
+* [ ] [Alura Training](certificates/devops/alura_training/)
+  * [ ] [Learn virtualization and provisioning](certificates/devops/alura_training/)
+    * [ ] [Infrastructure as Code: Preparing Machines on AWS with Ansible and Terraform](certificates/devops/)
+  * [ ] [Master containerization](certificates/devops/alura_training/)
+  * [ ] [Learn about continuous integration and delivery](certificates/devops/alura_training/)
+  * [ ] [Monitoring](certificates/devops/alura_training/)
 
-See the [open issues](https://github.com/marcossilvestrini/templates/issues) for a full list of proposed features (and known issues).
+
+See the [open issues](https://github.com/marcossilvestrini/alura-devops-training/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create.
+Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make this better, please fork the repo and create a pull request.
+You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
@@ -180,46 +188,50 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Marcos Silvestrini - [@mrsilvestrini](https://twitter.com/mrsilvestrini) - marcos.silvestrini@gmail.com
 
-Project Link: [https://github.com/marcossilvestrini/templates](https://github.com/marcossilvestrini/templates)
+Project Link: [https://github.com/marcossilvestrini/alura-devops-training](https://github.com/marcossilvestrini/alura-devops-training)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
+* [Github](https://github.com/)
 * [Github Template by othneildrew](https://github.com/othneildrew/Best-README-Template)
 * [Git gitignore Templates](https://github.com/github/gitignore)
-* []()
+* [Git Badges](https://github.com/Ileriayo/markdown-badges#usage)
+* [Github Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/marcossilvestrini/templates.svg?style=for-the-badge
-[contributors-url]: https://github.com/marcossilvestrini/templates/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/marcossilvestrini/templates.svg?style=for-the-badge
-[forks-url]: https://github.com/marcossilvestrini/templates/network/members
-[stars-shield]: https://img.shields.io/github/stars/marcossilvestrini/templates.svg?style=for-the-badge
-[stars-url]: https://github.com/marcossilvestrini/templates/stargazers
-[issues-shield]: https://img.shields.io/github/issues/marcossilvestrini/templates.svg?style=for-the-badge
-[issues-url]: https://github.com/marcossilvestrini/templates/issues
-[license-shield]: https://img.shields.io/github/license/marcossilvestrini/templates.svg?style=for-the-badge
-[license-url]: https://github.com/marcossilvestrini/templates/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/marcossilvestrini/alura-devops-training.svg?style=for-the-badge
+[contributors-url]: https://github.com/marcossilvestrini/alura-devops-training/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/marcossilvestrini/alura-devops-training.svg?style=for-the-badge
+[forks-url]: https://github.com/marcossilvestrini/alura-devops-training/network/members
+[stars-shield]: https://img.shields.io/github/stars/marcossilvestrini/alura-devops-training.svg?style=for-the-badge
+[stars-url]: https://github.com/marcossilvestrini/alura-devops-training/stargazers
+[issues-shield]: https://img.shields.io/github/issues/marcossilvestrini/alura-devops-training.svg?style=for-the-badge
+[issues-url]: https://github.com/marcossilvestrini/alura-devops-training/issues
+[license-shield]: https://img.shields.io/github/license/marcossilvestrini/alura-devops-training.svg?style=for-the-badge
+[license-url]: https://github.com/marcossilvestrini/alura-devops-training/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcossilvestrini
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com
+[Github-badge]: https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white
+[Github-url]: https://github.com/
+[GNULinux-badge]: https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black
+[GNULinux-url]: https://www.gnu.org/gnu/linux-and-gnu.en.html
+[Windows-badge]: https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white
+[Windows-url]: https://www.microsoft.com/
+[Bash-badge]: https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white
+[Bash-url]: https://www.gnu.org/software/bash/
+[Powershell-badge]: https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white
+[Powershell-url]: https://learn.microsoft.com/en-us/powershell/
+[Vagrant-badge]: https://img.shields.io/badge/vagrant-%231563FF.svg?style=for-the-badge&logo=vagrant&logoColor=white
+[Vagrant-url]: <https://www.vagrantup.com/>
+[AWS-badge]:https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
+[AWS-url]:https://aws.amazon.com/
+[Terraform-badge]: https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white
+[Terraform-url]: https://www.terraform.io/
+[Ansible-badge]: https://img.shields.io/badge/Ansible-000000?style=for-the-badge&logo=Ansible&logoColor=white
+[Ansible-url]: https://www.ansible.com/
