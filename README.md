@@ -146,13 +146,12 @@ _For more examples, please refer to the [Documentation](https://github.com/marco
 <!-- ROADMAP -->
 ## Roadmap
 
-* [ ] [Alura Training](certificates/devops/alura_training/)
-  * [ ] [Learn virtualization and provisioning](certificates/devops/alura_training/)
-    * [ ] [Infrastructure as Code: Preparing Machines on AWS with Ansible and Terraform](certificates/devops/)
-  * [ ] [Master containerization](certificates/devops/alura_training/)
-  * [ ] [Learn about continuous integration and delivery](certificates/devops/alura_training/)
-  * [ ] [Monitoring](certificates/devops/alura_training/)
-
+* [ ] [Alura Training]()
+  * [ ] [Learn virtualization and provisioning]()
+    * [ ] [Infrastructure as Code: Preparing Machines on AWS with Ansible and Terraform]()
+  * [ ] [Master containerization]()
+  * [ ] [Learn about continuous integration and delivery]()
+  * [ ] [Monitoring]()
 
 See the [open issues](https://github.com/marcossilvestrini/alura-devops-training/issues) for a full list of proposed features (and known issues).
 
