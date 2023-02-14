@@ -71,10 +71,6 @@ Project for share content about alura devops training
 * [![Windows][Windows-badge]][Windows-url]
 * [![Bash][Bash-badge]][Bash-url]
 * [![Powershell][Powershell-badge]][Powershell-url]
-* [![Vagrant][Vagrant-badge]][Vagrant-url]
-* [![AWS][AWS-badge]][AWS-url]
-* [![Terraform][Terraform-badge]][Terraform-url]
-* [![Ansible][Ansible-badge]][Ansible-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,35 +81,14 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-***python3***
+***git***
 
   ```sh
-  #Debian\Ubuntu
-  apt-get install python3
-  apt install -y python3-pip
-
   #Centos\RHEL
-  sudo dnf install python3
-  yum –y install python3-pip
-  ```
+  sudo dnf install git-all
 
-***terraform***
-
-  ```sh
   #Debian\Ubuntu
-  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
-
-  #Centos\RHEL
-  sudo yum install -y yum-utils
-  sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
-  sudo yum -y install terraform
-  ```
-
-***ansible***
-
-  ```sh
-  #Debian\Ubuntu\Centos\RHEL
-  python3 -m pip install --user ansible
+  sudo apt install git-all
   ```
 
 ### Installation
@@ -146,14 +121,23 @@ _For more examples, please refer to the [Documentation](https://github.com/marco
 <!-- ROADMAP -->
 ## Roadmap
 
-* [ ] [Alura Training]()
-  * [ ] [Learn virtualization and provisioning]()
-    * [ ] [Infrastructure as Code: Preparing Machines on AWS with Ansible and Terraform]()
-  * [ ] [Master containerization]()
-  * [ ] [Learn about continuous integration and delivery]()
-  * [ ] [Monitoring]()
-
-See the [open issues](https://github.com/marcossilvestrini/alura-devops-training/issues) for a full list of proposed features (and known issues).
+* [x] Compartilhar projeto com Git e GitHub
+* [ ] Recuperando commits com git reflog
+* [ ] Entenda os comandos git restore e switch
+* [ ] Git: Os novos comandos git restore e git switch
+* [ ] Git ammend: editando uma mensagem de commit
+* [ ] Usando Github sem linhas de comando
+* [ ] Git e Github para Sobrevivência | EP 01: Como o git funciona?
+* [ ] Git e Github para Sobrevivência | EP 02: Como o merge funciona?
+* [ ] Git e Github para Sobrevivência | EP 03: Como o rebase funciona?
+* [ ] Git e Github para Sobrevivência | EP 04: Issues, PullRequests, Templates e features legais do Github
+* [ ] Git e Github para Sobrevivência | EP 05: Como editar o último commit feito?
+* [ ] Git e Github para Sobrevivência | EP 06: Como apagar um commit? Como reverter um bug na master?
+* [ ] Git e Github para Sobrevivência | EP 07: Lidando com problemas de sincronização
+* [ ] Git e Github para Sobrevivência | EP 08: Melhorando seu histórico com squash e !fixup
+* [ ] Git e Github para Sobrevivência | EP 09: Entendendo fluxos de trabalho com Git
+* [ ] Git e Github para Sobrevivência | EP 10: Os poderes do git reflog
+* [ ] Git e Github para Sobrevivência | EP 11: Dicas Gerais]* [ ] Integração Contínua, Deploy Contínuo e Github Actions – Hipsters #213
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -226,11 +210,3 @@ Project Link: [https://github.com/marcossilvestrini/alura-devops-training](https
 [Bash-url]: https://www.gnu.org/software/bash/
 [Powershell-badge]: https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white
 [Powershell-url]: https://learn.microsoft.com/en-us/powershell/
-[Vagrant-badge]: https://img.shields.io/badge/vagrant-%231563FF.svg?style=for-the-badge&logo=vagrant&logoColor=white
-[Vagrant-url]: <https://www.vagrantup.com/>
-[AWS-badge]:https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
-[AWS-url]:https://aws.amazon.com/
-[Terraform-badge]: https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white
-[Terraform-url]: https://www.terraform.io/
-[Ansible-badge]: https://img.shields.io/badge/Ansible-000000?style=for-the-badge&logo=Ansible&logoColor=white
-[Ansible-url]: https://www.ansible.com/
