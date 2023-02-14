@@ -12,13 +12,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/marcossilvestrini/alura-devops-training">
-    <img src="images/git-logo.jpg" alt="Logo" width="400" height="200">
+    <img src="images/logo.png" alt="Logo" width="400" height="200">
   </a>
 
 <h3 align="center">Alura Devops Training</h3>
 
   <p align="center">
-    Alura Devops Training - Git
+    Alura Devops Training
     <br />
     <a href="https://github.com/marcossilvestrini/alura-devops-training"><strong>Explore the docs »</strong></a>
     <br />
