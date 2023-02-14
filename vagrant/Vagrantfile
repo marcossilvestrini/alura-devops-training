@@ -28,27 +28,16 @@ Vagrant.configure("2") do |config|
     debian_skynet.vm.hostname = APP_NAME
 
     # NETWORK
-    debian_skynet.vm.network "public_network" ,ip: "192.168.0.134",mode: "bridge" ,bridge: [
-      "ens32",
-      "Marvell AQtion 5Gbit Network Adapter",
-      "Realtek PCIe GbE Family Controller"
-    ]
-
-    debian_skynet.vm.network "public_network" ,ip: "10.172.74.91",mode: "bridge" ,bridge: [
-      "ens32",
-      "Marvell AQtion 5Gbit Network Adapter",
-      "Realtek PCIe GbE Family Controller"
-    ]
+    debian_skynet.vm.network "public_network",ip: "192.168.0.140",mode: "bridge",bridge: "Intel(R) I211 Gigabit Network Connection"
+    debian_skynet.vm.network "private_network",ip: "172.36.12.230"
 
     # MOUNTS
     debian_skynet.vm.synced_folder ".", "/vagrant", disabled: true
     debian_skynet.vm.synced_folder "./security", "/home/vagrant/security"
     debian_skynet.vm.synced_folder "./configs", "/home/vagrant/configs"
-    debian_skynet.vm.synced_folder "../../ansible/", "/home/vagrant/ansible"
-    debian_skynet.vm.synced_folder "../../govc/", "/home/vagrant/govc"
-    debian_skynet.vm.synced_folder "../../packer/", "/home/vagrant/packer"
-    debian_skynet.vm.synced_folder "../../powercli", "/home/vagrant/powercli"
-    debian_skynet.vm.synced_folder "../../terraform", "/home/vagrant/terraform"
+    debian_skynet.vm.synced_folder "../ansible/", "/home/vagrant/ansible"
+    debian_skynet.vm.synced_folder "../packer/", "/home/vagrant/packer"
+    debian_skynet.vm.synced_folder "../terraform", "/home/vagrant/terraform"
 
     # PROVIDER CUSTOMIZATIONS
     debian_skynet.vm.provider "virtualbox" do |vb|
@@ -56,8 +45,6 @@ Vagrant.configure("2") do |config|
       vb.name = APP_NAME
       vb.memory = 4096
       vb.cpus = 3
-      #vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
-      #vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     end
 
     # PROVISION

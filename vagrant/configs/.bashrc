@@ -112,16 +112,5 @@ if ! shopt -oq posix; then
     fi
 fi
 
-#Set default language
-# update-locale LANG=en_US.UTF-8 LANGUAGE=en_US
-
-#Set timezone
 TZ='America/Sao_Paulo'
 export TZ
-
-#Set terraform
-terraform -install-autocomplete 2>/dev/null
-
-#Set ansible paths
-PATH=${PATH}:/root/.local/bin
-PATH=${PATH}:/home/vagrant/.local/bin

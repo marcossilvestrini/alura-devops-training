@@ -1,0 +1,2 @@
+nameserver 192.168.0.140    # your private ns1
+nameserver 1.1.1.1          # ns external

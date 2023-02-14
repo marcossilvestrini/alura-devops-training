@@ -4,41 +4,48 @@ cd /home/vagrant
 
 #Set password account
 usermod --password $(echo vagrant | openssl passwd -1 -stdin) vagrant
+usermod --password $(echo vagrant | openssl passwd -1 -stdin) root
 
-#Set profile in /etc/profile
-cp -f configs/profile /etc
+# Set profile in /etc/profile
+cp -f configs/profile-debian /etc/profile
 
 # Set bash session
-rm .bashrc
 cp -f configs/.bashrc .
-cp -f configs/.bashrc /root
 
 # Set vim configs
 cp -f configs/.vimrc .
-cp -f configs/.vimrc /root
 
-#Update index packages and packages
-apt-get upgrade -y && apt-get update -y
+# Set properties for user root
+cp .bashrc .vimrc /root/
+
+# Set Swap memory
+fallocate -l 4G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
 
 # Install packages
-apt install -y sshpass
-apt install -y vim
-apt install -y software-properties-common
-apt install -y git
-apt install -y curl
-apt install -y python3-pip
-apt install -y python3-venv
-apt install -y tree
-apt install -y net-tools
-#apt install -y network-manager
-apt install -y psmisc
-apt install -y sysstat
-apt install -y htop
-
-#Install X11 Server
-apt-get install xserver-xorg -y
-Xorg -configure
-mv /root/xorg.conf.new /etc/X11/xorg.conf
+apt-get update -y
+apt-get upgrade -y
+apt-get install -y sshpass
+apt-get install -y vim
+apt-get install -y tree
+apt-get install -y python3-pip
+apt-get install -y python3-venv
+apt-get install -y net-tools
+apt-get install -y network-manager
+apt-get install -y sysstat
+apt-get install -y htop
+apt-get install -y collectd
+apt-get install -y ca-certificates
+apt-get install -y curl
+apt-get install -y lsb-release
+apt-get install -y xserver-xorg -y
+apt-get install -y gnupg
+apt-get install -y software-properties-common
+apt-get install -y apt-transport-https
+apt-get install -y zip
+apt-get install -y git
 
 # Set ssh
 cp -f configs/01-sshd-custom.conf /etc/ssh/sshd_config.d
@@ -50,14 +57,24 @@ echo vagrant | $(su -c "ssh-keygen -q -t ecdsa -b 521 -N '' -f .ssh/id_ecdsa <<<
 echo vagrant | $(su -c "gpg --batch --gen-key configs/gen-key-script" -s /bin/bash vagrant)
 echo vagrant | $(su -c "gpg --export --armor vagrant > .gnupg/vagrant.pub.key" -s /bin/bash vagrant)
 
+#Set X11 Server
+Xorg -configure
+mv /root/xorg.conf.new /etc/X11/xorg.conf
+
 #Enable sadc collected system activity
 sed -i 's/false/true/g' /etc/default/sysstat
 cp -f configs/cron.d-sysstat /etc/cron.d/sysstat
 systemctl start sysstat sysstat-collect.timer sysstat-summary.timer
 systemctl enable sysstat sysstat-collect.timer sysstat-summary.timer
 
-#Set vsphere route
-echo "10.107.29.190 tpsp1vca3n00001.tpsp1infra.local" >>/etc/hosts
+## Set Networkmanager
+cp -f configs/01-NetworkManager-custom.conf /etc/NetworkManager/conf.d/
+systemctl reload NetworkManager
+
+## Set resolv.conf file
+rm /etc/resolv.conf
+cp configs/resolv.conf.manually-configured /etc
+ln -s /etc/resolv.conf.manually-configured /etc/resolv.conf
 
 #Install packer
 curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
@@ -65,9 +82,6 @@ apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_re
 apt-get update && apt-get install packer
 
 # #Install Terraform
-
-##Install dependencies
-apt-get install -y gnupg software-properties-common
 
 ##Install the HashiCorp GPG key
 wget -O- https://apt.releases.hashicorp.com/gpg |
@@ -92,14 +106,15 @@ python3 -m pip install --user ansible
 cp -R /root/.local/ .
 chown -R vagrant:vagrant .local
 
+# Install AWS CLI
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+./aws/install
+rm awscliv2.zip
+
 #Install docker
 
 ##Set up the repository
-apt-get install \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
 mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 echo \
@@ -110,10 +125,7 @@ echo \
 apt-get update -y
 apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
-# #Install Powershell 7
-
-##Install system components
-apt update && apt install -y curl gnupg apt-transport-https
+# Install Powershell 7
 
 ##Import the public repository GPG keys
 curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
@@ -123,32 +135,3 @@ sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-deb
 
 ##Install PowerShell
 apt update -y && apt install -y powershell
-
-# ##Start PowerShell
-# #pwsh
-
-#Install Powercli
-pwsh -Command "Install-Module -Name VMware.PowerCLI -Force"
-pwsh -Command "Find-Module PowerNSX | Install-Module -scope AllUsers -Force"
-
-#Install govc
-
-#extract govc binary to /usr/local/bin
-#note: the "tar" command must run with root permissions
-curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" |
-    tar -C /usr/local/bin -xvzf - govc
-
-# Add default routes
-route add default gw 10.172.74.1 eth2
-route add default gw 192.168.0.1 eth1
-route add -net  10.107.29.0/24 gw 10.0.2.2  eth0
-
-# # #set prefered DNS servers
-# apt install -y resolvconf
-# systemctl enable resolvconf.service
-# systemctl start resolvconf.service
-# cp -f configs/head /etc/resolvconf/resolv.conf.d/
-# resolvconf --enable-updates
-# resolvconf -u
-
-foo= `cat .ssh`

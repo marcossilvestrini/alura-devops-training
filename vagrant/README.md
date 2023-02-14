@@ -13,5 +13,3 @@
 - terraform
 - ansible
 - powershell core
-- vmware powercli
-- govc

@@ -1,1 +1,8 @@
+#security
+**/authorized_keys
+**/*.pub
+**/*.ppk
+**/*private_key*
 
+#Vagrant
+**/*.vagrant
