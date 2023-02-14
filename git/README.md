@@ -137,9 +137,25 @@ _For more examples, please refer to the [Documentation](https://github.com/marco
 * [ ] Git e Github para Sobrevivência | EP 08: Melhorando seu histórico com squash e !fixup
 * [ ] Git e Github para Sobrevivência | EP 09: Entendendo fluxos de trabalho com Git
 * [ ] Git e Github para Sobrevivência | EP 10: Os poderes do git reflog
-* [ ] Git e Github para Sobrevivência | EP 11: Dicas Gerais]* [ ] Integração Contínua, Deploy Contínuo e Github Actions – Hipsters #213
+* [ ] Git e Github para Sobrevivência | EP 11: Dicas Gerais]
+* [ ] Integração Contínua, Deploy Contínuo e Github Actions – Hipsters #213
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## About Repository
+
+```sh
+# Initialize repository
+cd project
+git init
+
+# View status
+git status
+
+# Add files to repository
+git add app.ps1
+
+```
 
 <!-- CONTRIBUTING -->
 ## Contributing
