@@ -201,6 +201,7 @@ Project Link: [https://github.com/marcossilvestrini/alura-devops-training](https
 * [Github Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
 * [Git log cheatsheet](https://devhints.io/git-log)
 * [Git log format cheatsheets](https://devhints.io/git-log-format)
+* [Visualizing-git](https://git-school.github.io/visualizing-git/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

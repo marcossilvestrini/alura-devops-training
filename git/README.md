@@ -121,7 +121,11 @@ _For more examples, please refer to the [Documentation](https://github.com/marco
 <!-- ROADMAP -->
 ## Roadmap
 
-* [x] Compartilhar projeto com Git e GitHub
+* [x] Git e Github: o que são e primeiros passos
+* [x] Começando com Git: Aprendendo a versionar
+* [ ] Git e Github: controle e compartilhe seu código
+* [ ] Git e Github: estratégias de ramificação, Conflitos e Pull Requests
+* [ ] Compartilhar projeto com Git e GitHub
 * [ ] Recuperando commits com git reflog
 * [ ] Entenda os comandos git restore e switch
 * [ ] Git: Os novos comandos git restore e git switch
@@ -169,7 +173,11 @@ git config --local user.email
 ## About Repository
 
 ```sh
-# Initialize repository
+# Initialize repository in git server
+cd project
+git init --bare
+
+# Initialize repository in client
 cd project
 git init
 
@@ -184,14 +192,6 @@ git add .
 
 # Commit files
 git commit -m "Intuitive message"
-
-# Push files to remote server(github,gitlab,bitbucket,etc)
-git push
-git push --all
-
-# Get files in remote server(github,gitlab,bitbucket,etc)
-git pull
-git pull --all
 ```
 
 ## Git log
@@ -216,6 +216,48 @@ git log --pretty="format:%t"
 
 # Show only commit message
 git log --pretty="format:%s"
+
+# Show hash resumed and commit message
+git log --pretty="format:%h %s"
+
+# Show hash,commit message and author
+git log --pretty="format:%H %s %an"
+```
+
+## Remote repositories
+
+```sh
+# Clone repository
+git clone git@github.com:marcossilvestrini/alura-devops-training
+
+# Set remote repository
+git remote add origin github.com:marcossilvestrini/alura-devops-training
+
+# Check modifications in repository remote
+git fetch --all
+git fetch origin main
+
+# Push files to remote server(github,gitlab,bitbucket,etc)
+git push  --all
+git push -u origin main
+git push -u origin develop
+
+# Get files in remote server(github,gitlab,bitbucket,etc)
+git pull --all
+git pull origin main
+```
+
+## Branches
+
+```sh
+# Show branches
+git branch
+
+# Create new branch
+git branch develop
+
+# Go to a specific branch
+git checkout develop
 ```
 
 <!-- CONTRIBUTING -->
