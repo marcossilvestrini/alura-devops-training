@@ -154,6 +154,18 @@ git config --local user.name "your.name"
 git config --local user.email "your.email@email.com"
 ```
 
+## Get your git configuration
+
+```sh
+# Global (all repositories)
+git config --global user.name
+git config --global user.email
+
+# Local(only actual repository)
+git config --local user.name
+git config --local user.email
+```
+
 ## About Repository
 
 ```sh
@@ -161,7 +173,7 @@ git config --local user.email "your.email@email.com"
 cd project
 git init
 
-# View status
+# Show status
 git status
 
 # Add file to repository
@@ -180,6 +192,30 @@ git push --all
 # Get files in remote server(github,gitlab,bitbucket,etc)
 git pull
 git pull --all
+```
+
+## Git log
+
+```sh
+# Show all commits
+git log
+
+# Show all commits resumed
+git log --online
+
+# Show all commits and alterations in this commits
+git log -p
+
+# Show commits in specific branch
+git log main --oneline
+git log origin/main --oneline
+
+# Show only hash commits
+git log --pretty="format:%H"
+git log --pretty="format:%t"
+
+# Show only commit message
+git log --pretty="format:%s"
 ```
 
 <!-- CONTRIBUTING -->

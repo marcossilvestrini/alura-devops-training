@@ -199,6 +199,8 @@ Project Link: [https://github.com/marcossilvestrini/alura-devops-training](https
 * [Git gitignore Templates](https://github.com/github/gitignore)
 * [Git Badges](https://github.com/Ileriayo/markdown-badges#usage)
 * [Github Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
+* [Git log cheatsheet](https://devhints.io/git-log)
+* [Git log format cheatsheets](https://devhints.io/git-log-format)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
