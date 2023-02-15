@@ -142,6 +142,18 @@ _For more examples, please refer to the [Documentation](https://github.com/marco
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Set your git information
+
+```sh
+# Global (all repositories)
+git config --global user.name "your.name"
+git config --global user.email "your.email@email.com"
+
+# Local(only actual repository)
+git config --local user.name "your.name"
+git config --local user.email "your.email@email.com"
+```
+
 ## About Repository
 
 ```sh
@@ -152,9 +164,22 @@ git init
 # View status
 git status
 
-# Add files to repository
+# Add file to repository
 git add app.ps1
 
+# Add multiples files to repository
+git add .
+
+# Commit files
+git commit -m "Intuitive message"
+
+# Push files to remote server(github,gitlab,bitbucket,etc)
+git push
+git push --all
+
+# Get files in remote server(github,gitlab,bitbucket,etc)
+git pull
+git pull --all
 ```
 
 <!-- CONTRIBUTING -->
