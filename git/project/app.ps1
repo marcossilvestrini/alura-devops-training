@@ -6,4 +6,4 @@ Description: App writing in powershell language
 #>
 
 #Get Services
-Get-CimInstance -ClassName Win32_Service | ft
+Get-CimInstance -ClassName Win32_Service
