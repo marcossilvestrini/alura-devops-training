@@ -1,12 +1,12 @@
 {
   "version": "2.0.0",
   "tasks": [{
-    "label": "Git pul",
+    "label": "Git pull origin main",
     "type": "shell",
     "command": "",
     "windows": {
       "command": [
-        "git pull"
+        "git pull origin main"
       ]
     },
     "presentation": {
