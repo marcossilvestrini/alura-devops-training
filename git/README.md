@@ -255,9 +255,65 @@ git branch
 
 # Create new branch
 git branch develop
+git checkout -b develop
 
 # Go to a specific branch
 git checkout develop
+```
+
+## Git merge and rebase
+
+```sh
+# Merge branch in master
+git checkout master
+git merge develop
+
+# Rebase branch master
+git checkout master
+git rebase feature1
+```
+
+## Git Ctr+Z
+
+```sh
+# Discard changes in file
+git checkout -- index.html
+
+# Unstage files in stage untracked
+git reset HEAD CHANGELOG.md
+git restore --staged CHANGELOG.md
+
+# Restore commits
+git revert c4da079442cac2897ec69c215a2b9bb95fdfd988
+```
+
+## Git Stash
+
+This functionality is useful when you’ve made changes to a branch that you aren’t ready to commit,
+but you need to switch to another branch.
+
+```sh
+# Create stash
+git stash
+
+#Show stash
+git stash list
+
+# Apply stash
+git stash apply 0
+git stash pop
+```
+
+## Restore your project in specific commit
+
+```sh
+#1 - Navegate until commit
+git checkout <hash_commit>
+#2 - Create new branch
+git branch new-branch
+#3 - alter your code or not
+#4 - commit
+git commit -m "Downgrade project"
 ```
 
 <!-- CONTRIBUTING -->
@@ -302,6 +358,10 @@ Project Link: [https://github.com/marcossilvestrini/alura-devops-training](https
 * [Git gitignore Templates](https://github.com/github/gitignore)
 * [Git Badges](https://github.com/Ileriayo/markdown-badges#usage)
 * [Github Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
+* [Git log cheatsheet](https://devhints.io/git-log)
+* [Git log format cheatsheets](https://devhints.io/git-log-format)
+* [Visualizing-git](https://git-school.github.io/visualizing-git/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
