@@ -146,6 +146,14 @@ _For more examples, please refer to the [Documentation](https://github.com/marco
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Git help
+
+```sh
+git -h
+git <command> -h
+git <command> -help
+```
+
 ## Set your git information
 
 ```sh
@@ -319,6 +327,19 @@ git diff
 
 # Compare commits
 git diff bca9ee9..1957f56
+```
+
+## Tags ans releases
+
+```sh
+# Show tags
+git tag
+
+# Create tag
+git tag -a v1.0.0 -m "New version"
+
+# Push tag
+git push origin v1.0.0
 ```
 
 <!-- CONTRIBUTING -->
