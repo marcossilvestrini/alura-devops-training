@@ -304,16 +304,21 @@ git stash apply 0
 git stash pop
 ```
 
-## Restore your project in specific commit
+## Navigate between commits
 
 ```sh
-#1 - Navegate until commit
+#1 - Navigate until commit
 git checkout <hash_commit>
-#2 - Create new branch
-git branch new-branch
-#3 - alter your code or not
-#4 - commit
-git commit -m "Downgrade project"
+```
+
+## Gir diff
+
+```sh
+# Show latest project changes(only files that have not been added)
+git diff
+
+# Compare commits
+git diff bca9ee9..1957f56
 ```
 
 <!-- CONTRIBUTING -->
