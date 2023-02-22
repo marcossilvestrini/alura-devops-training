@@ -114,7 +114,7 @@ git clone https://github.com/marcossilvestrini/alura-devops-training.git
 git clone git@github.com:marcossilvestrini/alura-devops-training.git
 ```
 
-_For more examples, please refer to the [Documentation](https://github.com/marcossilvestrini/alura-devops-training)_
+*For more examples, please refer to the [Documentation](https://github.com/marcossilvestrini/alura-devops-training)*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,7 +123,7 @@ _For more examples, please refer to the [Documentation](https://github.com/marco
 
 * [x] Git e Github: o que são e primeiros passos
 * [x] Começando com Git: Aprendendo a versionar
-* [ ] Git e Github: controle e compartilhe seu código
+* [x] Git e Github: controle e compartilhe seu código
 * [ ] Git e Github: estratégias de ramificação, Conflitos e Pull Requests
 * [ ] Compartilhar projeto com Git e GitHub
 * [ ] Recuperando commits com git reflog
@@ -279,7 +279,14 @@ git merge develop
 # Rebase branch master
 git checkout master
 git rebase feature1
+
+# Iterative Rebase
+git rebase -i HEAD~10
 ```
+
+![image](https://user-images.githubusercontent.com/62715900/220649909-f0551d74-a65e-42b2-af47-f5096dfcd87f.png)
+
+![image](https://user-images.githubusercontent.com/62715900/220651038-6b1a8950-0448-4b33-a1ab-f0c931b15fed.png)
 
 ## Git Ctr+Z
 
