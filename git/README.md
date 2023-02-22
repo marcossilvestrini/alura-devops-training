@@ -260,6 +260,82 @@ git branch develop
 git checkout develop
 ```
 
+## Git merge and rebase
+
+```sh
+# Merge branch in master
+git checkout master
+git merge develop
+
+# Rebase branch master
+git checkout master
+git rebase feature1
+
+# Iterative rebase
+git rebase -i HEAD~3
+```
+
+## Git Ctr+Z
+
+```sh
+# Discard changes in file
+git checkout -- index.html
+
+# Unstage files in stage untracked
+git reset HEAD CHANGELOG.md
+git restore --staged CHANGELOG.md
+
+# Restore commits
+git revert c4da079442cac2897ec69c215a2b9bb95fdfd988
+```
+
+## Git Stash
+
+This functionality is useful when you’ve made changes to a branch that you aren’t ready to commit,
+but you need to switch to another branch.
+
+```sh
+# Create stash
+git stash
+
+#Show stash
+git stash list
+
+# Apply stash
+git stash apply 0
+git stash pop
+```
+
+## Navigate between commits
+
+```sh
+#1 - Navigate until commit
+git checkout <hash_commit>
+```
+
+## Gir diff
+
+```sh
+# Show latest project changes(only files that have not been added)
+git diff
+
+# Compare commits
+git diff bca9ee9..1957f56
+```
+
+## Tags ans releases
+
+```sh
+# Show tags
+git tag
+
+# Create tag
+git tag -a v1.0.0 -m "New version"
+
+# Push tag
+git push origin v1.0.0
+```
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
