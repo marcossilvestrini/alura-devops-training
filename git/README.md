@@ -146,14 +146,6 @@ git clone git@github.com:marcossilvestrini/alura-devops-training.git
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Git help
-
-```sh
-git -h
-git <command> -h
-git <command> -help
-```
-
 ## Set your git information
 
 ```sh
@@ -263,7 +255,6 @@ git branch
 
 # Create new branch
 git branch develop
-git checkout -b develop
 
 # Go to a specific branch
 git checkout develop
@@ -311,10 +302,6 @@ Project Link: [https://github.com/marcossilvestrini/alura-devops-training](https
 * [Git gitignore Templates](https://github.com/github/gitignore)
 * [Git Badges](https://github.com/Ileriayo/markdown-badges#usage)
 * [Github Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
-* [Git log cheatsheet](https://devhints.io/git-log)
-* [Git log format cheatsheets](https://devhints.io/git-log-format)
-* [Visualizing-git](https://git-school.github.io/visualizing-git/)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
