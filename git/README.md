@@ -329,7 +329,7 @@ git diff
 git diff bca9ee9..1957f56
 ```
 
-## Tags ans releases
+## Tags and releases
 
 ```sh
 # Show tags
