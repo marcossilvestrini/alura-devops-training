@@ -336,6 +336,17 @@ git tag -a v1.0.0 -m "New version"
 git push origin v1.0.0
 ```
 
+## Cherry-pick
+
+```sh
+# Example: Work in new release
+git checkout main
+git checkout -b release-v1.1.0
+#create\modify files...
+git checkout main
+git cherry-pick <your specific commit release-v1.1.0>
+```
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
