@@ -6,8 +6,7 @@ Description: App writing in powershell language
 #>
 
 #Get Services
-Get-CimInstance -ClassName Win32_Service
+Get-CimInstance -ClassName Win32_Service -Filter "Name LIKE '%AMD%'"
 
 # Get Process
 Get-CimInstance -ClassName Win32_Process -Filter "Name='code.exe'"
-
