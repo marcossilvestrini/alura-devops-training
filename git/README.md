@@ -168,6 +168,9 @@ git config --global user.email
 # Local(only actual repository)
 git config --local user.name
 git config --local user.email
+
+# Enables helpful colorization of command line output
+git config --global color.ui auto
 ```
 
 ## About Repository
@@ -259,6 +262,7 @@ git branch
 # Create new branch
 git branch develop
 git checkout -b feature/new-feature
+git switch -c [branch-name]
 
 # Go to a specific branch
 git checkout develop
@@ -428,6 +432,9 @@ Project Link: [https://github.com/marcossilvestrini/alura-devops-training](https
 * [Git gitignore Templates](https://github.com/github/gitignore)
 * [Git Badges](https://github.com/Ileriayo/markdown-badges#usage)
 * [Github Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
+* [Git cheatsheet](https://training.github.com/downloads/github-git-cheat-sheet/)
+* [Git cola](https://git-cola.github.io/)
+* [Github Desktop](https://desktop.github.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

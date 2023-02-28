@@ -195,13 +195,14 @@ Project Link: [https://github.com/marcossilvestrini/alura-devops-training](https
 ## Acknowledgments
 
 * [Github](https://github.com/)
-* [Github Template by othneildrew](https://github.com/othneildrew/Best-README-Template)
+* [Github cheatsheet](https://training.github.com/downloads/github-git-cheat-sheet/)
 * [Git gitignore Templates](https://github.com/github/gitignore)
 * [Git Badges](https://github.com/Ileriayo/markdown-badges#usage)
 * [Github Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
 * [Git log cheatsheet](https://devhints.io/git-log)
 * [Git log format cheatsheets](https://devhints.io/git-log-format)
 * [Visualizing-git](https://git-school.github.io/visualizing-git/)
+* [Github Template by othneildrew](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
