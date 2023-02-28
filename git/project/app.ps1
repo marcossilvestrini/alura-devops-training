@@ -13,3 +13,6 @@ Get-CimInstance -ClassName Win32_Process -Filter "Name='code.exe'"
 
 # Get ipv4 address
 (Get-NetIPAddress -AddressFamily IPv4).IPAddress
+
+# Get Macaddress
+(Get-NetAdapter).MacAddress
