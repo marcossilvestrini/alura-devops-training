@@ -203,6 +203,9 @@ git log
 # Show all commits resumed
 git log --online
 
+# Show login graph
+git log --graph
+
 # Show all commits and alterations in this commits
 git log -p
 
@@ -255,9 +258,14 @@ git branch
 
 # Create new branch
 git branch develop
+git checkout -b feature/new-feature
 
 # Go to a specific branch
 git checkout develop
+
+# Delete branch
+git branch -d <branch_name>
+git branch -D <branch_name>
 ```
 
 ## Git merge and rebase
@@ -359,6 +367,24 @@ git bisect bad
 git bisect good
 git bisect reset
 ```
+
+## Git show
+
+```sh
+git show <hash_commit>
+```
+
+## Git Blame
+
+```sh
+git blame <file>
+```
+
+## Git Flow
+
+<a href="https://github.com/marcossilvestrini/alura-devops-training">
+    <img src="../images/gitflow.jpg" alt="Git Flow">
+</a>
 
 <!-- CONTRIBUTING -->
 ## Contributing
