@@ -353,6 +353,11 @@ git cherry-pick <your specific commit release-v1.1.0>
 git bisect start
 git bisect bad HEAD
 git bisect good <your_good_commit>
+#continue searching your good commit
+git bisect bad
+#end your search
+git bisect good
+git bisect reset
 ```
 
 <!-- CONTRIBUTING -->
