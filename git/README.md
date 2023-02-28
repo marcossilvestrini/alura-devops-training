@@ -347,6 +347,14 @@ git checkout main
 git cherry-pick <your specific commit release-v1.1.0>
 ```
 
+## Bisect
+
+```sh
+git bisect start
+git bisect bad HEAD
+git bisect good <your_good_commit>
+```
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
