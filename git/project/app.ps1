@@ -8,5 +8,6 @@ Description: App writing in powershell language
 #Get Services
 Get-CimInstance -ClassName Win32_Service
 
-# GetProcess
-Get-CimInstance -ClassName Win32_Process
+# Get Process
+Get-CimInstance -ClassName Win32_Process -Filter "Name='code.exe'"
+
