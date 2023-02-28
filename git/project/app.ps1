@@ -5,6 +5,9 @@ Date: 14/02/2023
 Description: App writing in powershell language
 #>
 
+# Error action preferences
+$ErrorActionPreference="stop"
+
 #Get Services
 Get-CimInstance -ClassName Win32_Service -Filter "Name LIKE '%AMD%'"
 

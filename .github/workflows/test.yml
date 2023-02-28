@@ -1,0 +1,19 @@
+name: Run commands on different operating systems
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  Test-App-Powershell:
+    name: Run test in app.ps1
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Execute script
+        shell: pwsh
+        run: |
+          .\git\project\app.ps1
+          if($?){echo "Powershell App it's ok"}
+          Else{echo "Powershell App error. Please see your code"}
