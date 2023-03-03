@@ -409,7 +409,12 @@ git cherry-pick <hash_commit>
 ## Git restore and switch (old git checkout)
 
 ```sh
-# Git restore
+# Git restore all files
+git restore <hash_commit> .
+
+# Git restore specific file
+git restore <hash_commit> index.html
+
 
 # Git switch
 git switch develop
