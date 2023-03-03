@@ -390,6 +390,10 @@ git blame <file>
     <img src="../images/gitflow.jpg" alt="Git Flow">
 </a>
 
+## Git Hooks
+
+Folder of git hooks: .git/hooks
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
