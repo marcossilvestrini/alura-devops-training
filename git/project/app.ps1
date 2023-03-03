@@ -19,3 +19,5 @@ Get-CimInstance -ClassName Win32_Process -Filter "Name='code.exe'"
 
 # Get Macaddress
 (Get-NetAdapter).MacAddress
+
+
