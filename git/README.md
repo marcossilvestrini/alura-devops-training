@@ -409,15 +409,24 @@ git cherry-pick <hash_commit>
 ## Git restore and switch (old git checkout)
 
 ```sh
+# Restore file in actual commit
+git restore index.html
+
 # Git restore all files
-git restore <hash_commit> .
+git restore --source <hash_commit> .
 
 # Git restore specific file
-git restore <hash_commit> index.html
+git restore --source <hash_commit> index.html
 
+# Git restore with staged
+git restore --staged --source <hash_commit> index.html
+git restore --staged  index.html
 
-# Git switch
+# Git switch navigate in branchs
 git switch develop
+
+# Git switch create new branch
+git switch -c new_branch
 ```
 
 <!-- CONTRIBUTING -->
