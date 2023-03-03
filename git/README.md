@@ -124,9 +124,9 @@ git clone git@github.com:marcossilvestrini/alura-devops-training.git
 * [x] Git e Github: o que são e primeiros passos
 * [x] Começando com Git: Aprendendo a versionar
 * [x] Git e Github: controle e compartilhe seu código
-* [ ] Git e Github: estratégias de ramificação, Conflitos e Pull Requests
-* [ ] Compartilhar projeto com Git e GitHub
-* [ ] Recuperando commits com git reflog
+* [x] Git e Github: estratégias de ramificação, Conflitos e Pull Requests
+* [x] Compartilhar projeto com Git e GitHub
+* [x] Recuperando commits com git reflog
 * [ ] Entenda os comandos git restore e switch
 * [ ] Git: Os novos comandos git restore e git switch
 * [ ] Git ammend: editando uma mensagem de commit
@@ -393,6 +393,27 @@ git blame <file>
 ## Git Hooks
 
 Folder of git hooks: .git/hooks
+
+## Git reflog
+
+Reference logs, or "reflogs", record when the tips of branches and other references were updated in the local repository
+
+```sh
+# find old commits
+git reflog
+
+#restore for some commit after
+git cherry-pick <hash_commit>
+```
+
+## Git restore and switch (old git checkout)
+
+```sh
+# Git restore
+
+# Git switch
+git switch develop
+```
 
 <!-- CONTRIBUTING -->
 ## Contributing
