@@ -5,6 +5,8 @@ on:
   release:
     # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release
     types: [published]
+  push:
+    branches: [ "main" ]
 
 jobs:
   update-bug-report:
