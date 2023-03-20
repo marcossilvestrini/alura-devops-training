@@ -128,13 +128,13 @@ git clone git@github.com:marcossilvestrini/alura-devops-training.git
 * [x] Compartilhar projeto com Git e GitHub
 * [x] Recuperando commits com git reflog
 * [x] Entenda os comandos git restore e switch
-* [ ] Git: Os novos comandos git restore e git switch
-* [ ] Git ammend: editando uma mensagem de commit
-* [ ] Usando Github sem linhas de comando
-* [ ] Git e Github para Sobrevivência | EP 01: Como o git funciona?
-* [ ] Git e Github para Sobrevivência | EP 02: Como o merge funciona?
-* [ ] Git e Github para Sobrevivência | EP 03: Como o rebase funciona?
-* [ ] Git e Github para Sobrevivência | EP 04: Issues, PullRequests, Templates e features legais do Github
+* [x] Git: Os novos comandos git restore e git switch
+* [x] Git ammend: editando uma mensagem de commit
+* [x] Usando Github sem linhas de comando
+* [x] Git e Github para Sobrevivência | EP 01: Como o git funciona?
+* [x] Git e Github para Sobrevivência | EP 02: Como o merge funciona?
+* [x] Git e Github para Sobrevivência | EP 03: Como o rebase funciona?
+* [x] Git e Github para Sobrevivência | EP 04: Issues, PullRequests, Templates e features legais do Github
 * [ ] Git e Github para Sobrevivência | EP 05: Como editar o último commit feito?
 * [ ] Git e Github para Sobrevivência | EP 06: Como apagar um commit? Como reverter um bug na master?
 * [ ] Git e Github para Sobrevivência | EP 07: Lidando com problemas de sincronização
@@ -427,6 +427,12 @@ git switch develop
 
 # Git switch create new branch
 git switch -c new_branch
+```
+
+## Edit Commit Message
+
+```sh
+git commit --amend -m "New Commit Message Here"
 ```
 
 <!-- CONTRIBUTING -->
