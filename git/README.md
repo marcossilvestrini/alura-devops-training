@@ -127,7 +127,7 @@ git clone git@github.com:marcossilvestrini/alura-devops-training.git
 * [x] Git e Github: estratégias de ramificação, Conflitos e Pull Requests
 * [x] Compartilhar projeto com Git e GitHub
 * [x] Recuperando commits com git reflog
-* [ ] Entenda os comandos git restore e switch
+* [x] Entenda os comandos git restore e switch
 * [ ] Git: Os novos comandos git restore e git switch
 * [ ] Git ammend: editando uma mensagem de commit
 * [ ] Usando Github sem linhas de comando
