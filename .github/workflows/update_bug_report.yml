@@ -18,7 +18,7 @@ jobs:
           # update the branch that the release was created from
           ref: ${{ github.event.release.target_commitish }}
       - name: Update version
-        uses: ./
+        uses: https://github.com/marketplace/actions/issue-forms-version-dropdown
         with:
           github_token: ${{ secrets.PAT }}
           registry: github
