@@ -481,6 +481,7 @@ Project Link: [https://github.com/marcossilvestrini/alura-devops-training](https
 * [Git flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/)
 * [Git cola](https://git-cola.github.io/)
 * [Github Desktop](https://desktop.github.com/)
+* [Git Visualizing](https://git-school.github.io/visualizing-git/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
