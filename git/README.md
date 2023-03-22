@@ -478,7 +478,7 @@ Project Link: [https://github.com/marcossilvestrini/alura-devops-training](https
 * [Git Badges](https://github.com/Ileriayo/markdown-badges#usage)
 * [Github Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
 * [Git cheatsheet](https://training.github.com/downloads/github-git-cheat-sheet/)
-* [Git flow cheatsheet ](http://danielkummer.github.io/git-flow-cheatsheet/)
+* [Git flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/)
 * [Git cola](https://git-cola.github.io/)
 * [Github Desktop](https://desktop.github.com/)
 
